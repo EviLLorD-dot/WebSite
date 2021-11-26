@@ -12,7 +12,6 @@
 
 <body>
     <header>История ЭВМ</header>
-
     <p class="text1">
         Электронно-вычислительная машина — комплекс технических, аппаратных и программных средств,
         предназначенных для автоматической обработки информации, вычислений, автоматического управления.
@@ -23,7 +22,27 @@
     <h2> Поколения ЭВМ </h2>
     <div class="navblock">
     <p class="navhead"> Навигация </p>
+    <a class="navigref" href="" onclick="slowScroll 
+    ('#firstgen')">1 поколение</a><br>
+    <a class="navigref" href="jaavascript://0" onclick="slowScroll 
+    ('#twogen')">2 поколение</a><br>
+    <a class="navigref" href="jaavascript://0" onclick="slowScroll 
+    ('#threegen')">3 поколение</a><br>
+    <a class="navigref" href="javascript://0" onclick="slowScroll 
+    ('#fourgen')">4 поколение</a><br>
+    <a  class="navigref" href="javascript://0" 
+    onclick="slowScroll ('#fivegen')">5 поколение</a><br>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.min.js"></script>
+    <script>
+        function slowScroll (id) {
+          var offset = 0;
+          $('html, body').animate ({
+            scrollTop: $(id).offset ().top - offset
+          }, 500);
+          return false;
+        }
+   </script>
     <div class="divgen">
         <p class="headgen"> 1 Поколение </p>
         <div class="imgdiv"><img src="assets/img/firstgen.jpg" width="100%" height="100%"> </div>
@@ -96,7 +115,7 @@
         </ol>
         <a class="add"> Подробнее </a>
     </div>
-    <div class="divgen">
+    <div class="divgen" id="fivegen">
         <p class="headgen"> 5 Поколение </p>
         <div class="imgdiv"><img src="assets/img/fivegen.jpg" width="100%" height="100%"> </div>
         <ol class="specsgen">
