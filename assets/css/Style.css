@@ -125,8 +125,6 @@ img{
    margin-bottom: 25px;
    display: inline-block;
    position: relative;
-   margin-top: 0px;
-   margin-left: 25px;
    color: #c5c6c7;
    font-size: 20px;
    text-align: justify;
@@ -143,14 +141,19 @@ footer{
    border-width: 5px;
    border-radius: 5px;
 }
-#repos{
-   color: #c5c6c7;
-}
+
 .add{
    position: relative;
    float: right;
    right: 2%;
-   color: #c5c6c7;
+   margin-bottom: 1%;
    font-size: 20px;
+   text-decoration: none;
+   text-align: center;
+   color: #c5c6c7;
+   background-color: rgba(69, 162, 158, .15);
+   border-style: solid;
+   border-width: 3px;
+   border-radius: 10px;
+   border-color: #45a29e;
 }
-
